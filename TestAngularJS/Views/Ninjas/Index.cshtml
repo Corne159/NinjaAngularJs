@@ -1,0 +1,26 @@
+﻿<div class="content">
+    <button class="btn btn-primary" ng-click="order = 'name'">Order By Name</button>
+    <button class="btn btn-primary" ng-click="order = 'belt'">Order By Belt</button>
+
+    <input type="text" ng-model="search" placeholder="search ninjas" />
+
+    <ul id="ninja-list">
+        <li ng-repeat="nin in ninjas | orderBy: order | filter: search" ng-show="nin.available">
+            <img ng-src="{{nin.thumbnail}}" style="margin: 10px 5px 0 0; height: 50px; float: left;" ng-show="nin.thumbnail" />
+            <h3>{{nin.name}} - {{nin.rate | currency: 'R '}}</h3>
+            <div class="remove" ng-click="removeNinja(nin)">x</div>
+            <span class="belt" style="background: {{nin.belt}}">{{nin.belt}} belt</span>
+            <hr />
+        </li>
+    </ul>
+
+    <form ng-submit="addNinja()">
+        <input type="text" ng-model="newNinja.name" placeholder="name" />
+        <input type="text" ng-model="newNinja.belt" placeholder="belt" />
+        <input type="text" ng-model="newNinja.rate" placeholder="rate" />
+
+        <input class="btn btn-primary" type="submit" value="Add Ninja" />
+    </form>
+
+    <a href="" ng-click="removeAll()">Remove All Ninjas</a>
+</div>

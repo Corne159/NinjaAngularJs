@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div ng-app="myNinjaAppHome">
+
+    <header ng-include="'Home/Header'"></header>
+    <main ng-view></main>
+
+</div>
+
+@section Scripts {
+    <script src="~/js/home/home.js"></script>
+}
+
+@section Styles {
+    <link href="~/css/styles.css" rel="stylesheet" />
+}

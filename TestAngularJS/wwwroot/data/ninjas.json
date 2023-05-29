@@ -1,0 +1,30 @@
+[
+  {
+    "name": "yoshi",
+    "belt": "green",
+    "rate": "70",
+    "available": true,
+    "thumbnail": "css/images/Example Layout1.jpg"
+  },
+  {
+    "name": "crystal",
+    "belt": "yellow",
+    "rate": "50",
+    "available": true,
+    "thumbnail": "css/images/Example Layout2.jpg"
+  },
+  {
+    "name": "ryu",
+    "belt": "red",
+    "rate": "20",
+    "available": false,
+    "thumbnail": "css/images/Example Layout3.jpg"
+  },
+  {
+    "name": "corne",
+    "belt": "black",
+    "rate": "100",
+    "available": true,
+    "thumbnail": "css/images/Example Layout4.jpg"
+  }
+]

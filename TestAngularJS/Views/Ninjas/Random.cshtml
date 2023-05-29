@@ -1,0 +1,7 @@
+﻿<div style="text-align: center">
+    <h4>{{title}}</h4>
+    <div ng-transclude></div>
+    <img ng-src="{{ninjas[random].thumbnail}}" style="margin: 10px 5px 0 0; height: 50px;" ng-show="ninjas[random].thumbnail" />
+    <h3>{{ninjas[random].name}} - {{ninjas[random].rate | currency: 'R '}}</h3>
+    <span class="belt" style="background: {{ninjas[random].belt}}">{{ninjas[random].belt}} belt</span>
+</div>
